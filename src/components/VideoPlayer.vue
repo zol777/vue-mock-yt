@@ -1,7 +1,7 @@
 <template>
-<div v-if="video">
-  <div>
-    <iframe :src="videoUrl"/>
+<div v-if="video" class="col-md-8">
+  <div class="ratio ratio-16x9">
+    <iframe :src="videoUrl" />
   </div>
   <div class="details">
     <h4>{{video.snippet.title}}</h4>
